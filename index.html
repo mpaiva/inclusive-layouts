@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+      <header class="row">
+        <div id="skip-to-attach" class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
+          <h6>Inclusive Layouts</h6>
+        </div>
+          <h1>ARIA Landmarks Example</h1>
+          <p id="inst" class="inst">Visually outline the landmarks and/or headings on the page using the following buttons.</p>
+          <button type="button" onclick="showLandmarks(event)" aria-describedby="inst">Show Landmarks</button>
+          <button type="button" onclick="showHeadings(event)"  aria-describedby="inst">Show Headings</button>
+      </header>
+    <main>
+    
+    <h1>Gabriel</h1>
+    <h2>Education</h2>
+
+</main>
+    
+<script src="script.js"></script>
+
+
+       <script type="text/javascript" >
+      // Use the SkipTo defaults, but just showing custom configuration
+      var SkipToConfig = {
+        settings: {
+          skipTo: {
+            headings: 'h1, h2',
+            attachElement: '#skip-to-attach',
+
+            colorTheme: 'default',
+          },
+        },
+      };
+    </script>
+    <script src="https://paypal.github.io/skipto/downloads/js/skipto.min.js"></script>
+
+  </body>
+</html>
