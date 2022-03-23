@@ -4,10 +4,19 @@
     height: 200px;
     background: lightgray;
 }
+
 .center {
     margin: auto;
     width: 30%;
+
     }
+.searchBar{
+    width: 70%;
+}
+
+.searchBarButton{
+    width: 20%;
+}
 
 .menu-content{
     max-width: 560px;
