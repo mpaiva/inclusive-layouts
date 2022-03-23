@@ -1,29 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HTML Sectioning Elements: ARIA Landmarks Example</title>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen"/>
+    <link href="css/bootstrap-theme.css" rel="stylesheet" media="screen"/>
+    <link href="css/bootstrap-accessibility.css" rel="stylesheet" media="screen"/>
+    <link href="css/visua11y.css" rel="stylesheet" media="screen"/>
+    <link href="css/common.css" rel="stylesheet" media="screen"/>
+    <link href="css/style.css" rel="stylesheet" media="screen"/>
+
+  </head>
+  <body>
+    <div class="container">
+      <header class="row">
+        <div id="skip-to-attach" class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
+        </div>
+        <div class="col-xs-12 col-sm-9 col-md-9 col-lg-10">
+          <h1>ARIA Landmarks Example</h1>
+          <p id="inst" class="inst">Visually outline the landmarks and/or headings on the page using the following buttons.</p>
+          <button type="button" onclick="showLandmarks(event)" aria-describedby="inst">Show Landmarks</button>
+          <button type="button" onclick="showHeadings(event)"  aria-describedby="inst">Show Headings</button>
+        </div>
+      </header>
+      <div class="row">
+        <div class="">
+
+          <form role="search">
+
+  <input type="search" aria-label="search text" size="20">
+
+  <input type="submit" value="Search">
+
+</form>
+          <main>
+          <!-- search here -->
+            
+          <!-- Grid here -->
+            <div class="wrapper grid">
+      <div class="item big-box">
+          <img id="menu1" class="" type="button" src="images/menu1.jpg" 
+               alt="" data-toggle="modal" data-target="#menu01">
+        <div class="img"></div> <!--仮・imgに画像を入れる-->
+          <p>produto 1</p>
+   </div>
+    <div class="item big-box">
+          <img id="menu1" class="" type="button" src="images/menu1.jpg" alt="" data-toggle="modal" data-                     target="#menu01">
+      <div class="img"></div> <!--仮・imgに画像を入れる-->
+          <p>produto 2</p>
+      </div>
+    
+       <div class="item big-box">
+          <img id="menu1" class="" type="button" src="images/menu1.jpg" alt="" data-toggle="modal" data-                     target="#menu01">
+      <div class="img"></div> <!--仮・imgに画像を入れる-->
+          <p>produto 3</p>
+      </div>
+    
+       <div class="item big-box">
+          <img id="menu1" class="" type="button" src="images/menu1.jpg" alt="" data-toggle="modal" data-                     target="#menu01">H
+      <div class="img"></div> <!--仮・imgに画像を入れる-->
+          <p>produto 4</p>
+      </div>
+    
+       <div class="item big-box">
+          <img id="menu1" class="" type="button" src="images/menu1.jpg" alt="" data-toggle="modal" data-                     target="#menu01">
+      <div class="img"></div> <!--仮・imgに画像を入れる-->
+          <p>produto 5</p>
+      </div>
+    
+       <div class="item big-box">
+          <img id="menu1" class="" type="button" src="images/menu1.jpg" alt="" data-toggle="modal" data-                     target="#menu01">
+      <div class="img"></div> <!--仮・imgに画像を入れる-->
+          <p>produto 6</p>
+      </div>
+    
+       <div class="item big-box">
+          <img id="menu1" class="" type="button" src="images/menu1.jpg" alt="" data-toggle="modal" data-                     target="#menu01">
+      <div class="img"></div> <!--仮・imgに画像を入れる-->
+          <p>produto 7</p>
+      </div>
+    
+       <div class="item big-box">
+          <img id="menu1" class="" type="button" src="images/menu1.jpg" alt="" data-toggle="modal" data-                     target="#menu01">
+      <div class="img"></div> <!--仮・imgに画像を入れる-->
+          <p>produto 8</p>
+      </div>
+    
+       <div class="item big-box">
+          <img id="menu1" class="" type="button" src="images/menu1.jpg" alt="" data-toggle="modal" data-                     target="#menu01">
+      <div class="img"></div> <!--仮・imgに画像を入れる-->
+          <p>produto 9</p>
+      </div>
+    
+    
+          </main>
+        </div>
+      </div>
+      <div class="well well-sm">
+        <footer class="row">
+          <div class="col-xs-12 col-sm-9 col-md-9 col-lg-10">
+            W3C ARIA Authoring Practices Task Force
+          </div>
+          <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
+            Copyright 2021
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-accessibility.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-accessibility-2.js"></script>
+    <script type="text/javascript" src="js/visua11y.js"></script>
+    <script type="text/javascript" src="js/show.js"></script>
+    <script type="text/javascript" >
+      // Use the SkipTo defaults, but just showing custom configuration
+      var SkipToConfig = {
+        settings: {
+          skipTo: {
+            headings: 'h1, h2',
+            attachElement: '#skip-to-attach',
+
+            colorTheme: 'default',
+          },
+        },
+      };
+    </script>
+    <script type="text/javascript" src="js/skipto.min.js"></script>
+  </body>
+</html>
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>replit</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="css/bootstrap.css" rel="stylesheet" media="screen"/>
+    <link href="css/bootstrap-theme.css" rel="stylesheet" media="screen"/>
+    <link href="css/bootstrap-accessibility.css" rel="stylesheet" media="screen"/>
+    <link href="css/visua11y.css" rel="stylesheet" media="screen"/>
+    <link href="css/common.css" rel="stylesheet" media="screen"/>
   </head>
   <body>
-      <header class="row">
+      <header role="banner">
         <div id="skip-to-attach" class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
           <h6>Inclusive Layouts</h6>
         </div>
-          <h1>ARIA Landmarks Example</h1>
+ <h1>ARIA Landmarks Example</h1>
           <p id="inst" class="inst">Visually outline the landmarks and/or headings on the page using the following buttons.</p>
           <button type="button" onclick="showLandmarks(event)" aria-describedby="inst">Show Landmarks</button>
           <button type="button" onclick="showHeadings(event)"  aria-describedby="inst">Show Headings</button>
       </header>
     <main>
     
-    <h1>Gabriel</h1>
+  <h1>Gabriel</h1>
     <h2>Education</h2>
 
 </main>
     
-<script src="script.js"></script>
+<script src="js/show.js"></script>
+<script src="js/visually.js"></script>
 
 
        <script type="text/javascript" >
@@ -33,7 +170,6 @@
           skipTo: {
             headings: 'h1, h2',
             attachElement: '#skip-to-attach',
-
             colorTheme: 'default',
           },
         },
