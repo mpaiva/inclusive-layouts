@@ -1,9 +1,14 @@
 
 .img{
-    max-width: 300px;
+    max-width: 250px;
     height: 200px;
     background: lightgray;
 }
+.fig
+{
+    max-width: 300px;
+}
+
 .category{
     width: 100%;
 }
@@ -44,8 +49,10 @@ display: none;
 .grid{
     display: grid;
     gap: 26px;
-    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(260px,260px));/*the max was 1fr*/
     margin-top: 6%;
     margin-bottom: 50px;
 }
-
+.item:hover{
+    opacity: .5;
+}

@@ -10,22 +10,26 @@
         for(let i =0; i < database.children.length; i++){
 
             let buffer = "";
-            for(let y =0; y < database.children[i].children.length; y++){
+            let haveItems = false;
+            buffer += `<div class="wrapper grid">
+            `;
+            for(let y = 0; y < database.children[i].children.length; y++){
                 if(database.children[i].children[y].name.toLocaleLowerCase().includes(search) || search == "") 
                 {
+                    haveItems = true;
                     buffer += `
-                    <div class="item big-box">
+                    <div class="item">
                         <figure>
-                            <img id="menu1" class="" type="button" src='../img/${database.children[i].children[y].path}' alt='${database.children[i].children[y].name}'>
+                            <img id="menu1" class="img" type="button" src='../img/${database.children[i].children[y].path}' alt='${database.children[i].children[y].name}'>
                             <figcaption>${database.children[i].children[y].name}</figcaption>
                         </figure>
                     </div>
-                    
                     `; 
                 }
             }
-
-            if(buffer !== "")
+            buffer += `</div>
+            `;   
+            if(haveItems)
             {
                 document.querySelector('.products').innerHTML += `
                 
@@ -70,20 +74,23 @@ fetch('img/desktop.json')
         
         `; 
         
+        let buffer = "";
+        buffer += `<div class="wrapper grid">
+        `;
         for(let y =0; y < database.children[i].children.length; y++){
-            testMuqueca++;
-                document.querySelector('.products').innerHTML += `
-                
-                <div class="item big-box">
-                <figure>
-                    <img id="menu1" class="" type="button" src='../img/${database.children[i].children[y].path}' alt='${database.children[i].children[y].name}'>
-                    <figcaption>${database.children[i].children[y].name}</figcaption>
-                </figure>
-                </div>
-                
-                `; 
-            }
 
+                buffer += `
+                <div class="item">
+                    <figure>
+                        <img id="menu1" class="img" type="button" src='../img/${database.children[i].children[y].path}' alt='${database.children[i].children[y].name}'>
+                        <figcaption>${database.children[i].children[y].name}</figcaption>
+                    </figure>
+                </div>
+                `; 
+        }
+        buffer += `</div>
+        `; 
+        document.querySelector('.products').innerHTML += buffer;
     }
 console.log(testMuqueca );
 
