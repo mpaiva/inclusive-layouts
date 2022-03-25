@@ -92,3 +92,32 @@ display: none;
 .product-tile__tag {
 	padding: 0 24px;
 }
+
+
+.product-grid {
+    margin-bottom: 40px;
+  }
+
+  .product-grid__product-tiles {
+	display: grid;
+	grid-column-gap: 8px;
+	grid-row-gap: 16px;
+	grid-template-columns: repeat(auto-fill, minmax(158px, 1fr));
+}
+.product-tile {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 4px 0 rgb(0 0 0 / 8%);
+}
+
+.product-tile__link {
+    color: #1f1f1f;
+    text-decoration: none;
+    font-weight: 700;
+    display: block;
+    padding-bottom: 24px;
+}
+.product-tile__image {
+    max-width: 100%;
+    border-radius: 4px 4px 0 0;
+}
