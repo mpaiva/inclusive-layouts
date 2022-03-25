@@ -1,12 +1,13 @@
 
-.img{
-    max-width: 250px;
-    height: 200px;
-    background: lightgray;
+
+.fig{
+    width: 100%; 
 }
-.fig
-{
-    max-width: 300px;
+.img{
+    /*max-width: 150px;*/
+    width: 100%;
+    height: auto;
+    background: lightgray;
 }
 
 .category{
@@ -49,7 +50,7 @@ display: none;
 .grid{
     display: grid;
     gap: 26px;
-    grid-template-columns: repeat(auto-fit,minmax(260px,260px));/*the max was 1fr*/
+    grid-template-columns: repeat(auto-fit,minmax(240px,240px));/*the max was 1fr*/
     margin-top: 6%;
     margin-bottom: 50px;
 }
