@@ -30,11 +30,13 @@ function printResults(searchClass,page, selected)
         `;
     
     let buffer2 = `
-        <div class="wrapper grid">
+        <section class="product-grid" aria-label="Product Results">
+            <div class="product-grid__product-tiles" data-component="grid">
         `; 
 
     let buffer3 =`
                 </div>
+                </section>
             </main>
         </div>
         `;
@@ -97,12 +99,14 @@ function rendering(searchClass,buffer1,buffer2,buffer3,page, selected)
                     counter++;
                     haveItems = true;
                     temporaryBuffer += `
-                    <div class="item">
-                        <figure class="fig">
-                            <img id='${database.children[i].children[y].name}' type="button" src='../img/${database.children[i].children[y].path}' alt='${database.children[i].children[y].name}'>
-                            <figcaption>${database.children[i].children[y].name}</figcaption>
-                        </figure>
-                    </div>
+                    <article class="productGrid__product-tile product-tile" aria-labelledby='${counter}'>
+                    <a class="product-tile__link" id="${counter}" aria-label="aria label">
+                    <!--i took out the href-->
+                        <img id='${database.children[i].children[y].name}' class="product-tile__image" src='../img/${database.children[i].children[y].path}' alt='${database.children[i].children[y].name}'>
+                        <span class="product-tile__name" aria-label="${database.children[i].children[y].name}">${database.children[i].children[y].name}</span>
+                        <span class="product-tile__tag">tag</span>
+                    </a>
+                    </article>
                     `; 
                 }
             }
